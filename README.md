@@ -174,6 +174,31 @@ class Eventbind extends Component {
     
 
 
+ANOTHE APPROACH 
+
+class EvenBind extends Component {
+    constructor ()
+    {
+        super ()
+        this.state = {
+            message :'Hi'
+        }
+    }
+    ClickHandler = () =>{
+        this.setState ({
+            message :"goodbye"
+        })
+    }
+    render ()
+    {
+        return (
+            <div>this.state.message</div>
+            <button onClick ={this.ClickHandler}>Click</button>
+        )
+    }
+}
+
+
 
 
 
