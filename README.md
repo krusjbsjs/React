@@ -69,3 +69,45 @@ class Welcome extends Component {
         )
     }
 }
+
+
+
+
+destructing props
+
+const Greet = props =>{
+return (
+<div>
+  <h1>
+    Hi {props.name} a.k.a {props.heroName}    // declared name in app.js
+  </h1>
+ </div>
+)
+}
+
+const Greet = props =>{
+ const {names,heronames} = props 
+ return (
+    <div>
+      <h1>
+         Hi {name} a.ka. {props}
+      </h1>
+    </div>
+ )
+}
+
+
+
+for class component 
+class Welcome extends Component {
+
+    const {name ,heroName} = this.props
+      render (){
+          return (
+              <div>
+                  <h1>My name is {name} a.k.a {heroName}</h1>
+              </div>
+          )
+      }
+    
+}
