@@ -200,6 +200,29 @@ class EvenBind extends Component {
 
 
 
+// conditional rendering 
+import React {Component} from react 
+class UserGreeting extends Component {
+    constructor (props)
+    {
+        super (props)
+        this.state = {
+            isloggedIn : false
+        }
+    }
+    render (){
+        return {
+            this.state.isloggedIn ? (
+                <div>Welcome</div>
+            ):
+            (
+                <div>Welcome guest </div>
+            )
+        }
+    }
+}
+
+
 
 
 
