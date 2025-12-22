@@ -32,3 +32,40 @@ return (
 }
 
 export default Hello
+
+
+
+
+
+props - function
+class - this.props
+
+
+
+Destructing props and state
+
+
+import React {Components } from react 
+
+class Welcome extends Component {
+    constructor (){
+        super (){
+            this.State ={
+                count = 0
+            }
+        }
+    }
+
+    increament (){
+        this.setState ({
+            count = this.State.count +1;
+            },()=>{console.log('count',this.State.count)})
+    }
+    render (){
+        return (
+            <div> Hi </div>
+            <button onClick = { ()=>{this.increament()}}>  </button>
+            
+        )
+    }
+}
