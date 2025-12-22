@@ -111,3 +111,38 @@ class Welcome extends Component {
       }
     
 }
+
+
+
+
+/// EVENT HANDLING
+
+
+without () we can call this as event handler
+EVENT HANDLING IN FUNCTION COMPONENT
+function FunctionClick(){
+function ClickHandler (){
+   console.log("hi")    
+}
+    return (
+        <div>Hi</div>
+        <button onClick ={ clickHandler}>Click</button>  // dont call function use them as event
+    )
+}
+
+
+
+
+class ClassClick extends Component {
+    const ClickHandler (){
+        console.log("test console click handler")
+    }
+    render (){
+        return (
+            <div>Hi</div>
+            <button onClick = {this.ClickHandler}></button>
+        )
+    }
+}
+
+
