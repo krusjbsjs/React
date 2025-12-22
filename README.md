@@ -146,3 +146,39 @@ class ClassClick extends Component {
 }
 
 
+Bind - keyword
+to change the state = this.setState  
+this.setState = {
+"this" keyword in argument handle is undefined
+suppose if i click on button then it is not displaying its state then we can use bind keyword
+
+class Eventbind extends Component {
+    constructor (){
+        super ()
+        this.state = {
+            message : 'hi'
+        }
+    }
+    clickHandler () {
+        this.setState ({
+            message ="Goodbye"
+        })
+    }
+    render (){
+        return (
+            <h1>Hi hello this is us</h1>
+            <button onClick = {this.clickHandler.bind(this)}>Click</button>
+        )
+    }
+}
+    
+
+
+
+
+
+
+    
+    
+
+
